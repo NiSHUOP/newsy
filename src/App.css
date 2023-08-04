@@ -1,38 +1,50 @@
 .App {
-  text-align: center;
+  background-color: whitesmoke;
+  height: 100%;
+}
+.nav-item{
+  padding-left: 20px;
+}
+.text-body-emphasis{
+  color: white !important;
+  text-shadow: 0 0 10px rgb(67, 67, 67);
+  
+}
+.text-desc{
+  text-shadow: 0 0 25px black ;
+}
+.carousel-item img{
+  height: 30vh;
+  width: 100%;
+}
+.text-body-secondary{
+  margin-left: 35%;
+}
+.feature{
+  box-Shadow: 1px 1px 2px silver;
+  transition: transform .2s;
+}
+.feature:hover{
+  box-Shadow: 1px 1px 12px silver;
+  transform: scale(1.05);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (min-width: 768px) {
+  .carousel-item img{
+    height: 20vh;
+    width: 100%;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-width: 1200px) {
+  .carousel-item img{
+    height: 35vh;
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (max-width: 600px) {
+  .carousel-item img{
+    height: 28vh;
+    width: 100%;
   }
 }
